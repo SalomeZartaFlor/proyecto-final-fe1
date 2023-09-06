@@ -1,0 +1,79 @@
+
+body {
+    font-family: 'Be Vietnam Pro', sans-serif;
+    color: #B3B2B7;
+    font-size: 16px;
+}
+
+h2,
+h4 {
+    color: #242E53
+}
+
+.deportistasDelMes h2 {
+    margin: 2em 1em;
+}
+
+.deportistasDelMes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.panelDeDeportistas {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.deportista {
+    display: none;
+}
+
+.deportistaPrincipal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 1em;
+    width: 300px;
+}
+
+button {
+    background-color: #8B48BF;
+    color: #ffff;
+    padding: 0.5em;
+    border-width: inherit;
+    border-radius: 20px;
+    width: 5rem;
+}
+
+
+
+@media(min-width:401px) {
+  
+    .panelDeDeportistas {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        }
+
+    .deportista {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin: 1em;
+        padding: 1em;
+        visibility: visible;
+    }
+    .deportistaPrincipal {
+        width: auto;
+        padding: 1em;
+        margin: 1em;
+    }
+}
