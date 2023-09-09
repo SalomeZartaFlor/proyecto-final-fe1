@@ -2,7 +2,7 @@ body {
     font-family: 'Be Vietnam Pro', sans-serif;
     color: #B3B2B7;
     font-size: 16px;
-    margin: 0;
+    margin: 0px;
     /*Es para que la version movil cubra todo el espacio*/
 }
 
@@ -11,24 +11,26 @@ h4 {
     color: #242E53
 }
 
-.deportistasDelMes h2 {
-    margin: 2rem 1rem;
-}
 
-.deportistasDelMes {
+
+#deportistasDelMes {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 0 0 5rem;
-    /*Es para espaciar abajo la seccion de bannerFinal*/
+    height: 100vh;
 }
 
-.panelDeDeportistas {
+#deportistasDelMes h2 {
+    margin: 2rem 1rem;
+}
+
+#panelDeDeportistas {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    margin: 0px 0px 3rem;
 }
 
 .deportista {
@@ -42,7 +44,8 @@ h4 {
     align-items: center;
     text-align: center;
     margin: 1rem;
-    width: 300px;
+    width: 390px;
+    line-height: 156.6%;
 }
 
 button {
@@ -51,8 +54,19 @@ button {
     color: #ffff;
     padding: 0.5rem;
     border-width: inherit;
-    border-radius: 20px;
-    width: 5.5rem;
+    border-radius: 22px;
+    width: 134px;
+    height: 44px;
+    font-size: 0.9rem;
+}
+
+#deportistasDelMes button{
+    margin-bottom: 90px;
+}
+
+
+#deportistasDelMes button:hover{
+    opacity: 0.5;
 }
 
 #bannerFinal {
@@ -61,88 +75,88 @@ button {
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    padding: 0rem 2rem 1rem;
+    padding: 0rem 2rem 2rem;
     text-align: center;
-    height: 40vh;
-    /*Para que el footer conste del 60vh para que en conjunto queden en una sola pantalla*/
+    height: 70vw;
 }
 
 #bannerFinal H2 {
     color: #FFFFFF;
     margin: 1.5rem;
+    width: 50vh;
+    font-size: 40px;
 }
 
 #bannerFinal button {
     font-family: inherit;
-    background-color: #8B48BF;
-    padding: 0.5em;
-    border-width: inherit;
-    border-radius: 20px;
-    width: 5.5rem;
+    background-color: #232C50;
 }
 
-footer{
+footer {
     box-sizing: border-box;
-    font-size: 0.63rem;
+    font-size: 12.5px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
     background-color: #1E1E26;
-    padding: 5%; 
-    height: 60vh; /*Esto nos va a complementar el 60% del viewpoint con el 40% del bannerFinal*/
+    padding: 2rem 0%;
+    height: 100vh;
 }
 
-#buscar{    
+#buscar {
     font-family: inherit;
     font-size: 0.8rem;
-    border-radius: 20px;
-    height: 5vh;
-    width: 70vw;
+    border-radius: 22px;
+    height: 44px;
+    width: 308px;
     border-style: none;
+    margin: 0px 10px 0px 0px;
 }
 
 
-#formularioBusqueda button{
-    font-size: 0.5rem;
+#formularioBusqueda button {
+    font-size: 0.8rem;
     border-radius: 20px;
-    width: 2.5rem;
+    width: 63px;
+    height: 42px;
 }
 
 
-#barraNavegacionFooter{
+#barraNavegacionFooter {
     display: flex;
     align-items: flex-start;
 
 }
 
-footer ul{   
+#barraNavegacionFooter ul {
     display: flex;
-    flex-wrap: wrap; 
-    list-style-type:none;
+    flex-wrap: wrap;
+    list-style-type: none;
     padding: 0%;
     margin: 0% 3%;
+    font-size: 1rem;
 }
 
-footer li{
+#barraNavegacionFooter li {
     box-sizing: border-box;
     width: 100%;
-    font-size: 0.8rem;
-    padding: 2% 10% 2%;
+    font-size: 1rem;
+    padding: 12px 23% 0px;
 }
 
-#redes{
+#redes {
     width: 100vw;
     display: flex;
     justify-content: space-around;
 }
 
-.iconoFooter{
-    height: 1rem;
-    width: 1rem;
+.iconoFooter {
+    height: 20px;
+    width: 20px;
 }
 
-#logoSitioWeb{    
+#logoSitioWeb {
     display: block;
     height: 1.4rem;
 }
@@ -154,7 +168,7 @@ footer li{
 
 @media(min-width:481px) {
 
-    .panelDeDeportistas {
+    #panelDeDeportistas {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -170,12 +184,17 @@ footer li{
         margin: 1em;
         padding: 1em;
         visibility: visible;
+        width: 25vw;
+        font-size: 1rem;
+        line-height: 156.6%;
     }
 
     .deportistaPrincipal {
-        width: auto;
         padding: 1em;
         margin: 1em;
+        font-size: 1rem;
+        line-height: 156.6%;
+        width: 25vw;
     }
 
     #bannerFinal {
@@ -186,15 +205,54 @@ footer li{
         align-items: center;
         padding: 1% 10% 1% 10%;
         text-align: left;
+        height: 30vh;
     }
 
     #bannerFinal H2 {
         width: 20rem;
-        text-align: left;        
+        text-align: left;
     }
 
-    #bannerFinal button{
+    #bannerFinal button {
         color: #8B48BF;
         background-color: #ffff;
+    }
+
+    footer {
+        flex-direction: column-reverse;
+        flex-wrap: wrap-reverse;
+        height: 247px;
+        padding: 3rem 1rem;
+    }
+
+    #formularioBusqueda {
+        order: 1;
+    }
+
+    #buscar {
+        width: 20vw;
+    }
+
+    #logoSitioWeb {
+        order: 4;
+    }
+
+    #redes {
+        width: 30%;
+        order: 3;
+    }
+
+    #barraNavegacionFooter {
+        order: 2;
+        width: 30%;
+        height: 100%;
+    }
+
+    #barraNavegacionFooter li {
+        padding: 10px 0px;
+    }
+
+    .Copiright {
+        order: 0;
     }
 }

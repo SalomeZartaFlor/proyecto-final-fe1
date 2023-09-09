@@ -15,4 +15,10 @@ FOOTER:
 
     -barraNavegacionFooter (Dylan):
     Dentro de la balla de navegacion, dividimos la lista en dos para poderlas acomodar como dos columnas y que estuvieran dentro del mismo contexto de esta barra de navegacion.
-    Usamos la propiedad flex-wrap para que se repete el tamaño de las dos listas y estas quedaran una al lado de la otra.
+    Usamos la propiedad flex-wrap:wrap para que se respete el tamaño de las dos listas y estas quedaran una al lado de la otra.
+
+    -redes (Dylan):
+    Es un contenedor article que contiene los iconos de las redess y que se emplea para asegurar que los iconos se organicen siempre de forma horizontal.
+
+    -CAMBIO MOVIL-DESKTOP:
+    Para hacer el cambio de movil a desktop usamos la propiedades flex-direction: column-reverse y      flex-wrap: wrap-reverse, para ordenar los elementos del footer en forma de columna con orden de abajo para arriba y el flex-warp para que los acomodara de la misma forma. Lo crucial fue darle un ordena los elementos flex para que el ultimo elemento en modo movil era el "copy rights" pasara a ser el primero en modo desktop.
