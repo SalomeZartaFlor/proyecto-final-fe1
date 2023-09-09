@@ -6,6 +6,98 @@ body {
     /*Es para que la version movil cubra todo el espacio*/
 }
 
+/* - HEADER - */
+header {
+    padding: 50px 165px;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-around;
+}
+
+.logo {
+    margin-top: 25px;
+    margin-left: -20px;
+    width: 107.684px;
+    height: 25px;
+}
+
+#menu-navegacion-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    padding: 15px;
+}
+
+
+/* Se convierte los enlaces a elementos de linea con la propiedad inline-block */
+nav ul li {
+    display: inline-block;
+    text-align: center;
+    margin: 0px 18px ;
+}
+
+/* Se eliminan las lineas inferiores de los enlaces */
+nav a {
+    text-decoration: none;
+    color: black;
+
+}
+/* Creacion de cambio de color al acercar el cursor por el menu de navegacion */
+nav ul li a:hover {
+    color: rgba(36, 46, 82, 0.60);
+}
+
+/* Estilos boton contacto */
+.btn-contact {
+    display: flex;
+    width: 134px;
+    height: 44px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    background: #8b48bf;
+    color: white;
+    box-shadow: 0px 4px 7px 0px rgba(0, 0, 0, 0.25);
+    border: 1px solid rgb(139, 72, 191);
+    margin-top: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 h2,
 h4 {
     color: #242E53
