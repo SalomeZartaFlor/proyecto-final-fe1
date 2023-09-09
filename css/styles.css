@@ -415,8 +415,48 @@ footer {
     /* Salome */
 
     /* Header */
+  /* Banner morado */
+  
+  .contenedor-banner1 {
+    display: flex;
+    background: #3cddf3;
+    width: 100vw;
+    height: 306px;
+    padding: 30px 20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+  }
 
-    
+  .contenedor-banner1 h2 {
+    color: white;
+    display: flex;
+    font-weight: 700;
+    font-size: 36px;
+    width: 70%;
+    height: 88px;
+    padding-left: 0px;
+    padding-bottom: 20px;
+    margin-top: 20px;
+    align-self: stretch;
+    text-align: left;
+    flex-wrap: wrap;
+  }
+
+  .contenedor-banner1 p {
+    display: flex;
+    font-weight: 500;
+    font-size: 16px;
+    width: 440px;
+    height: 88px;
+    margin-top: -1px;
+    line-height: 24.18px;
+    letter-spacing: 1px;
+    flex-direction: column;
+    justify-content: center;
+    align-self: stretch;
+  }
 
 
 
