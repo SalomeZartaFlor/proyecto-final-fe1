@@ -8,7 +8,7 @@ body {
 
 /* - HEADER - */
 header {
-    padding: 50px 165px;
+    padding-top: 33px;
 }
 
 .menu {
@@ -17,93 +17,68 @@ header {
 }
 
 .logo {
-    margin-top: 25px;
     margin-left: -20px;
     width: 107.684px;
     height: 25px;
 }
 
+/* Se oculta el menu de navegacion */
 #menu-navegacion-header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    padding: 15px;
+    display: none;
 }
 
-
-/* Se convierte los enlaces a elementos de linea con la propiedad inline-block */
-nav ul li {
-    display: inline-block;
-    text-align: center;
-    margin: 0px 18px ;
-}
-
-/* Se eliminan las lineas inferiores de los enlaces */
-nav a {
-    text-decoration: none;
-    color: black;
-
-}
-/* Creacion de cambio de color al acercar el cursor por el menu de navegacion */
-nav ul li a:hover {
-    color: rgba(36, 46, 82, 0.60);
+/* Estilo del icono del menu tipo hamburguesa */
+#iconoHamburguesaMenu {
+    width: 20px;
+    height: 20px;
 }
 
 /* Estilos boton contacto */
 .btn-contact {
-    display: flex;
-    width: 134px;
-    height: 44px;
-    padding: 10px;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50px;
-    background: #8b48bf;
-    color: white;
-    box-shadow: 0px 4px 7px 0px rgba(0, 0, 0, 0.25);
-    border: 1px solid rgb(139, 72, 191);
-    margin-top: 20px;
+    display: none;
 }
 
 /* - SECCION TENISTA - */
 .contenedor-tenista {
     display: flex;
-    width: 75%;
+    flex-direction: column;
+    width: auto;
     height: auto;
     margin: 0 auto;
 }
 
-/* .img-tenista .dimensiones {
-    width: 40%;
-} */
-
 .contenedor-img-tenista {
-    width: 50%;
+    /*width: 50%;*/
     position: relative;
     bottom: -10px;
 }
 
-
 .img-tenista {
-    height: 90%;
-} 
+    height: 400px;
+}
 
 .encabezado {
+    margin-top: 80px;
+    /*
     width: 48%;
     padding: 50px;
+    */
 }
 
 .encabezado h1 {
     color: #232C50;
     text-align: right;
-    font-size: 45px;
+
     font-style: normal;
     font-weight: 700;
-    line-height: 114.6%; /* 57.3px */
+    line-height: 114.6%;
     letter-spacing: -1.75px;
     align-self: stretch;
     margin-top: -10px;
+
+    font-size: 50px;
+    margin-left: 25px;
+    margin-right: 8px;
 }
 
 .encabezado p {
@@ -117,7 +92,8 @@ nav ul li a:hover {
     font-size: 15px;
     font-style: normal;
     font-weight: 500;
-    line-height: 157.1%; /* 26.013px */
+    line-height: 157.1%;
+    /* 26.013px */
     margin-top: -20px;
 }
 
@@ -139,12 +115,14 @@ nav ul li a:hover {
 
 /* - SECCION BANNER MORADO - */
 .contenedor-banner1 {
-    background-color: #8B48BF;
-    width: 100vw;
-    height: 100px;
-    padding: 40px 0 40px 0;
     display: flex;
-    flex-direction: row;
+    background: #3cddf3;
+    width: 100vw;
+    height: 306px;
+    padding: 30px 20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     color: white;
 }
 
@@ -197,7 +175,7 @@ nav ul li a:hover {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    margin-top: 130px ;
+    margin-top: 130px;
 }
 
 .servicio1 {
@@ -206,7 +184,7 @@ nav ul li a:hover {
     height: 162px;
     margin-left: 100px;
     padding-bottom: 50px;
-   
+
     /* align-items: flex-start; */
 }
 
@@ -217,7 +195,7 @@ nav ul li a:hover {
     height: 104px;
     color: #B3B2B7;
     padding: 0;
-    line-height: 25px ;
+    line-height: 25px;
 }
 
 .servicio1 h5 {
@@ -304,12 +282,12 @@ button {
     font-size: 0.9rem;
 }
 
-#deportistasDelMes button{
+#deportistasDelMes button {
     margin-bottom: 90px;
 }
 
 
-#deportistasDelMes button:hover{
+#deportistasDelMes button:hover {
     opacity: 0.5;
 }
 
@@ -415,48 +393,161 @@ footer {
     /* Salome */
 
     /* Header */
-  /* Banner morado */
-  
-  .contenedor-banner1 {
-    display: flex;
-    background: #3cddf3;
-    width: 100vw;
-    height: 306px;
-    padding: 30px 20px;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: white;
-  }
 
-  .contenedor-banner1 h2 {
-    color: white;
-    display: flex;
-    font-weight: 700;
-    font-size: 36px;
-    width: 70%;
-    height: 88px;
-    padding-left: 0px;
-    padding-bottom: 20px;
-    margin-top: 20px;
-    align-self: stretch;
-    text-align: left;
-    flex-wrap: wrap;
-  }
+    header {
+        padding: 50px 165px;
+    }
 
-  .contenedor-banner1 p {
-    display: flex;
-    font-weight: 500;
-    font-size: 16px;
-    width: 440px;
-    height: 88px;
-    margin-top: -1px;
-    line-height: 24.18px;
-    letter-spacing: 1px;
-    flex-direction: column;
-    justify-content: center;
-    align-self: stretch;
-  }
+    .logo {
+        margin-top: 25px;
+        margin-left: -20px;
+    }
+
+    #menu-navegacion-header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        padding: 15px;
+        visibility: visible;
+    }
+
+
+    /* Se convierte los enlaces a elementos de linea con la propiedad inline-block */
+    nav ul li {
+        display: inline-block;
+        text-align: center;
+        margin: 0px 18px;
+    }
+
+    /* Se eliminan las lineas inferiores de los enlaces */
+    nav a {
+        text-decoration: none;
+        color: black;
+
+    }
+
+    /* Creacion de cambio de color al acercar el cursor por el menu de navegacion */
+    nav ul li a:hover {
+        color: rgba(36, 46, 82, 0.60);
+    }
+
+    #iconoHamburguesaMenu {
+        display: none;
+    }
+
+    /* Estilos boton contacto */
+    .btn-contact {
+        display: flex;
+        width: 134px;
+        height: 44px;
+        padding: 10px;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50px;
+        background: #8b48bf;
+        color: white;
+        box-shadow: 0px 4px 7px 0px rgba(0, 0, 0, 0.25);
+        border: 1px solid rgb(139, 72, 191);
+        margin-top: 20px;
+    }
+
+    /* - SECCION TENISTA - */
+    .contenedor-tenista {
+        display: flex;
+        flex-direction: row;
+        width: 75%;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .contenedor-img-tenista {
+        width: 50%;
+        position: relative;
+        bottom: -10px;
+    }
+
+    .img-tenista {
+        height: 90%;
+    }
+
+    .encabezado {
+
+        margin-top: 0px;
+        width: 48%;
+        padding: 50px;
+    }
+
+    .encabezado h1 {
+        color: #232C50;
+        text-align: right;
+        font-size: 45px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 114.6%;
+        /* 57.3px */
+        letter-spacing: -1.75px;
+        align-self: stretch;
+        margin-top: -10px;
+    }
+
+    .encabezado p {
+        display: flex;
+        height: 71px;
+        flex-direction: column;
+        justify-content: center;
+        align-self: stretch;
+        color: #000;
+        text-align: right;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 157.1%;
+        /* 26.013px */
+        margin-top: -20px;
+    }
+
+    /* Banner morado */
+
+    .contenedor-banner1 {
+
+        background-color: #8B48BF;
+        width: 100vw;
+        height: 100px;
+        padding: 40px 0 40px 0;
+        display: flex;
+        flex-direction: row;
+        color: white;
+    }
+
+    .contenedor-banner1 h2 {
+        color: white;
+        display: flex;
+        font-weight: 700;
+        font-size: 36px;
+        width: 70%;
+        height: 88px;
+        padding-left: 0px;
+        padding-bottom: 20px;
+        margin-top: 20px;
+        align-self: stretch;
+        text-align: left;
+        flex-wrap: wrap;
+    }
+
+    .contenedor-banner1 p {
+        display: flex;
+        font-weight: 500;
+        font-size: 16px;
+        width: 440px;
+        height: 88px;
+        margin-top: -1px;
+        line-height: 24.18px;
+        letter-spacing: 1px;
+        flex-direction: column;
+        justify-content: center;
+        align-self: stretch;
+    }
 
 
 
