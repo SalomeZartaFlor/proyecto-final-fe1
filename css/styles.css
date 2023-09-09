@@ -1,87 +1,490 @@
 body {
-    font-family: 'Be Vietnam Pro', sans-serif;
-    color: #B3B2B7;
-    font-size: 16px;
-    margin: 0px;
-    /*Es para que la version movil cubra todo el espacio*/
+  font-family: "Be Vietnam Pro", sans-serif;
+  color: #b3b2b7;
+  font-size: 16px;
+  margin: 0px;
+  /*Es para que la version movil cubra todo el espacio*/
 }
 
 /* - HEADER - */
 header {
-    padding-top: 33px;
+  padding-top: 33px;
 }
 
 .menu {
-    display: flex;
-    justify-content: space-around;
+  display: flex;
+  justify-content: space-around;
 }
 
 .logo {
-    margin-left: -20px;
-    width: 107.684px;
-    height: 25px;
+  margin-left: -20px;
+  width: 107.684px;
+  height: 25px;
 }
 
 /* Se oculta el menu de navegacion */
 #menu-navegacion-header {
-    display: none;
+  display: none;
 }
 
 /* Estilo del icono del menu tipo hamburguesa */
 #iconoHamburguesaMenu {
-    width: 20px;
-    height: 20px;
+  width: 20px;
+  height: 20px;
 }
 
 /* Estilos boton contacto */
 .btn-contact {
-    display: none;
+  display: none;
 }
 
 /* - SECCION TENISTA - */
 .contenedor-tenista {
-    display: flex;
-    flex-direction: column;
-    width: auto;
-    height: auto;
-    margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  height: auto;
+  margin: 0 auto;
 }
 
 .contenedor-img-tenista {
-    /*width: 50%;*/
-    position: relative;
-    bottom: -10px;
+  /*width: 50%;*/
+  position: relative;
+  bottom: -10px;
 }
 
 .img-tenista {
-    height: 400px;
+  height: 400px;
 }
 
 .encabezado {
-    margin-top: 80px;
-    /*
+  margin-top: 80px;
+  /*
     width: 48%;
     padding: 50px;
     */
 }
 
 .encabezado h1 {
-    color: #232C50;
-    text-align: right;
+  color: #232c50;
+  text-align: right;
 
-    font-style: normal;
-    font-weight: 700;
-    line-height: 114.6%;
-    letter-spacing: -1.75px;
-    align-self: stretch;
-    margin-top: -10px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 114.6%;
+  letter-spacing: -1.75px;
+  align-self: stretch;
+  margin-top: -10px;
 
-    font-size: 50px;
-    margin-left: 25px;
-    margin-right: 8px;
+  font-size: 50px;
+  margin-left: 25px;
+  margin-right: 8px;
 }
 
 .encabezado p {
+  display: flex;
+  height: 71px;
+  flex-direction: column;
+  justify-content: center;
+  align-self: stretch;
+  color: #000;
+  text-align: right;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 157.1%;
+  /* 26.013px */
+  margin-top: -20px;
+}
+
+.boton2 {
+  display: flex;
+  color: white;
+  border-radius: 50px;
+  background: #8b48bf;
+  width: 134px;
+  height: 44px;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgb(139, 72, 191);
+  padding: 10px 20px;
+  position: relative;
+  right: -310px;
+}
+
+/* - SECCION BANNER MORADO - */
+
+.contenedor-banner1 {
+  display: flex;
+  background: #3cddf3;
+  width: 100vw;
+  height: 306px;
+  padding: 30px 20px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.contenedor-banner1 h2 {
+  color: white;
+  display: flex;
+  font-weight: 700;
+  font-size: 36px;
+  width: 70%;
+  height: 88px;
+  padding-left: 0px;
+  padding-bottom: 20px;
+  margin-top: 20px;
+  align-self: stretch;
+  text-align: left;
+  flex-wrap: wrap;
+}
+
+.contenedor-banner1 p {
+  display: flex;
+  font-weight: 500;
+  font-size: 16px;
+  width: 440px;
+  height: 88px;
+  margin-top: -1px;
+  line-height: 24.18px;
+  letter-spacing: 1px;
+  flex-direction: column;
+  justify-content: center;
+  align-self: stretch;
+}
+
+/* - SECCION SERVICIOS - */
+.contenedor-servicios {
+  display: flex;
+  background: white;
+  width: 100vw;
+  height: 630px;
+  padding: 40px 0px;
+  flex-direction: row;
+  margin-left: 34px;
+}
+
+.servicios {
+  display: flex;
+  width: 100%;
+  margin: 0 auto;
+  margin-right: -40px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin-top: 130px;
+}
+
+.servicio1 {
+  /* display: flex; */
+  width: 530px;
+  height: 162px;
+  margin-left: 50px;
+  padding-bottom: 50px;
+  padding-top: 10px;
+  /* align-items: flex-start; */
+}
+
+.servicio1 p {
+  font-weight: 500;
+  font-size: 16.3px;
+  width: 400px;
+  height: 103px;
+  color: #b3b2b7;
+  margin-left: -80px;
+  line-height: 25px;
+}
+
+/* .servicio1 h5 {
+    display: flex;
+    align-items: center;
+    border-radius: 50px 0px 0px 50px;
+    background: rgba(139, 72, 191, 0.30);
+    width: 446px;
+    height: 500px;
+    padding: 0px;
+  } */
+
+.servicio1 h5 {
+  background-color: rgba(139, 72, 191, 0.3);
+  border-radius: 50px 0px 0px 50px;
+  color: #323851;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 23.38px;
+  height: 48px;
+  margin-top: -33px;
+}
+
+.btn-1 {
+  display: flex;
+  background: #8b48bf;
+  color: white;
+  width: 69px;
+  height: 43px;
+  border-radius: 30px;
+  padding: 10px 25px 10px 25px;
+  border: 1px solid rgb(139, 72, 191);
+  justify-content: center;
+  align-items: center;
+  margin-left: -85px;
+  margin-top: -120px;
+}
+
+/* Dylan */
+
+h2,
+h4 {
+  color: #242e53;
+}
+
+#deportistasDelMes {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#deportistasDelMes h2 {
+  margin: 2rem 1rem;
+}
+
+#panelDeDeportistas {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 0px 0px 3rem;
+}
+
+.deportista {
+  display: none;
+}
+
+.deportistaPrincipal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 1rem;
+  width: 390px;
+  line-height: 156.6%;
+}
+
+button {
+  font-family: inherit;
+  background-color: #8b48bf;
+  color: #ffff;
+  padding: 0.5rem;
+  border-width: inherit;
+  border-radius: 22px;
+  width: 134px;
+  height: 44px;
+  font-size: 0.9rem;
+}
+
+#deportistasDelMes button {
+  margin-bottom: 90px;
+}
+
+#deportistasDelMes button:hover {
+  opacity: 0.5;
+}
+
+#bannerFinal {
+  background-color: #3cddf3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0rem 2rem 2rem;
+  text-align: center;
+  height: 70vw;
+}
+
+#bannerFinal H2 {
+  color: #ffffff;
+  margin: 1.5rem;
+  width: 50vh;
+  font-size: 40px;
+}
+
+#bannerFinal button {
+  font-family: inherit;
+  background-color: #232c50;
+}
+
+footer {
+  box-sizing: border-box;
+  font-size: 12.5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #1e1e26;
+  padding: 2rem 0%;
+  height: 100vh;
+}
+
+#buscar {
+  font-family: inherit;
+  font-size: 0.8rem;
+  border-radius: 22px;
+  height: 44px;
+  width: 308px;
+  border-style: none;
+  margin: 0px 10px 0px 0px;
+}
+
+#formularioBusqueda button {
+  font-size: 0.8rem;
+  border-radius: 20px;
+  width: 63px;
+  height: 42px;
+}
+
+#barraNavegacionFooter {
+  display: flex;
+  align-items: flex-start;
+}
+
+#barraNavegacionFooter ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  padding: 0%;
+  margin: 0% 3%;
+  font-size: 1rem;
+}
+
+#barraNavegacionFooter li {
+  box-sizing: border-box;
+  width: 100%;
+  font-size: 1rem;
+  padding: 12px 23% 0px;
+}
+
+#redes {
+  width: 100vw;
+  display: flex;
+  justify-content: space-around;
+}
+
+.iconoFooter {
+  height: 20px;
+  width: 20px;
+}
+
+#logoSitioWeb {
+  display: block;
+  height: 1.4rem;
+}
+
+@media (min-width: 481px) {
+  /* Salome */
+
+  /* Header */
+
+  header {
+    padding: 50px 165px;
+  }
+
+  .logo {
+    margin-top: 25px;
+    margin-left: -20px;
+  }
+
+  #menu-navegacion-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    padding: 15px;
+    visibility: visible;
+  }
+
+  /* Se convierte los enlaces a elementos de linea con la propiedad inline-block */
+  nav ul li {
+    display: inline-block;
+    text-align: center;
+    margin: 0px 18px;
+  }
+
+  /* Se eliminan las lineas inferiores de los enlaces */
+  nav a {
+    text-decoration: none;
+    color: black;
+  }
+
+  /* Creacion de cambio de color al acercar el cursor por el menu de navegacion */
+  nav ul li a:hover {
+    color: rgba(36, 46, 82, 0.6);
+  }
+
+  #iconoHamburguesaMenu {
+    display: none;
+  }
+
+  /* Estilos boton contacto */
+  .btn-contact {
+    display: flex;
+    width: 134px;
+    height: 44px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    background: #8b48bf;
+    color: white;
+    box-shadow: 0px 4px 7px 0px rgba(0, 0, 0, 0.25);
+    border: 1px solid rgb(139, 72, 191);
+    margin-top: 20px;
+  }
+
+  /* - SECCION TENISTA - */
+  .contenedor-tenista {
+    display: flex;
+    flex-direction: row;
+    width: 75%;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .contenedor-img-tenista {
+    width: 50%;
+    position: relative;
+    bottom: -10px;
+  }
+
+  .img-tenista {
+    height: 90%;
+  }
+
+  .encabezado {
+    margin-top: 0px;
+    width: 48%;
+    padding: 50px;
+  }
+
+  .encabezado h1 {
+    color: #232c50;
+    text-align: right;
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 114.6%;
+    /* 57.3px */
+    letter-spacing: -1.75px;
+    align-self: stretch;
+    margin-top: -10px;
+  }
+
+  .encabezado p {
     display: flex;
     height: 71px;
     flex-direction: column;
@@ -95,79 +498,64 @@ header {
     line-height: 157.1%;
     /* 26.013px */
     margin-top: -20px;
-}
+  }
 
-.boton2 {
-    display: flex;
-    color: white;
-    border-radius: 50px;
-    background: #8B48BF;
-    width: 134px;
-    height: 44px;
-    padding: 10px;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid rgb(139, 72, 191);
-    padding: 10px 20px;
-    position: relative;
-    right: -310px;
-}
+  /* Banner Morado */
 
-/* - SECCION BANNER MORADO - */
-.contenedor-banner1 {
-    display: flex;
-    background: #3cddf3;
+  .contenedor-banner1 {
+    background-color: #8b48bf;
     width: 100vw;
-    height: 306px;
-    padding: 30px 20px;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: white;
-}
-
-/* .banner-morado {
+    height: 100px;
+    padding: 40px 0 40px 0;
     display: flex;
     flex-direction: row;
     color: white;
-} */
+  }
 
-.contenedor-banner1 h2 {
+  .banner-morado {
+    display: flex;
+    flex-direction: row;
+    color: white;
+  }
+
+  .contenedor-banner1 h2 {
     color: white;
     display: flex;
     font-weight: 700;
     font-size: 36px;
     width: 35%;
     height: 88px;
-    padding-left: 210px;
+    padding-left: -10px;
     padding-right: 90px;
     margin-top: 10px;
     align-self: stretch;
     text-align: left;
-}
+  }
 
-.contenedor-banner1 p {
+  .contenedor-banner1 p {
     display: flex;
     font-weight: 500;
     font-size: 16px;
     width: 450px;
     height: 88px;
     margin-top: -1px;
-    Line-height: 24.18px;
+    line-height: 24.18px;
     letter-spacing: 1px;
-}
+  }
 
-/* - SECCION SERVICIOS - */
-.contenedor-servicios {
+  /* Seccion Servicios */
+
+  /* - SECCION SERVICIOS - */
+  .contenedor-servicios {
     display: flex;
-    background: #FAFAFA;
+    background: #fafafa;
     width: 100vw;
     height: 410px;
     padding: 40px 0px;
     flex-direction: row;
-}
+  }
 
-.servicios {
+  .servicios {
     display: flex;
     width: 100%;
     margin: 0 auto;
@@ -176,9 +564,9 @@ header {
     align-items: center;
     justify-content: center;
     margin-top: 130px;
-}
+  }
 
-.servicio1 {
+  .servicio1 {
     /* display: flex; */
     width: 530px;
     height: 162px;
@@ -186,30 +574,31 @@ header {
     padding-bottom: 50px;
 
     /* align-items: flex-start; */
-}
+  }
 
-.servicio1 p {
+  .servicio1 p {
     font-weight: 500;
     font-size: 16.3px;
     width: 437px;
     height: 104px;
-    color: #B3B2B7;
+    color: #b3b2b7;
     padding: 0;
     line-height: 25px;
-}
+  }
 
-.servicio1 h5 {
+  .servicio1 h5 {
+    background-color: #fafafa;
     color: #323851;
     font-weight: 700;
     font-size: 16px;
     line-height: 23.38px;
     height: 23px;
     margin-top: -33px;
-}
+  }
 
-.btn-1 {
+  .btn-1 {
     display: flex;
-    background: #8B48BF;
+    background: #8b48bf;
     color: white;
     width: 69px;
     height: 43px;
@@ -220,429 +609,95 @@ header {
     align-items: center;
     margin-left: -85px;
     margin-top: -120px;
-}
+  }
 
+  /* Dylan */
 
-
-
-
-/* Dylan */
-
-h2,
-h4 {
-    color: #242E53
-}
-
-
-
-#deportistasDelMes {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
-
-#deportistasDelMes h2 {
-    margin: 2rem 1rem;
-}
-
-#panelDeDeportistas {
+  #panelDeDeportistas {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    margin: 0px 0px 3rem;
-}
+  }
 
-.deportista {
-    display: none;
-}
-
-.deportistaPrincipal {
+  .deportista {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin: 1rem;
-    width: 390px;
+    margin: 1em;
+    padding: 1em;
+    visibility: visible;
+    width: 25vw;
+    font-size: 1rem;
     line-height: 156.6%;
-}
+  }
 
-button {
-    font-family: inherit;
-    background-color: #8B48BF;
-    color: #ffff;
-    padding: 0.5rem;
-    border-width: inherit;
-    border-radius: 22px;
-    width: 134px;
-    height: 44px;
-    font-size: 0.9rem;
-}
-
-#deportistasDelMes button {
-    margin-bottom: 90px;
-}
-
-
-#deportistasDelMes button:hover {
-    opacity: 0.5;
-}
-
-#bannerFinal {
-    background-color: #3CDDF3;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0rem 2rem 2rem;
-    text-align: center;
-    height: 70vw;
-}
-
-#bannerFinal H2 {
-    color: #FFFFFF;
-    margin: 1.5rem;
-    width: 50vh;
-    font-size: 40px;
-}
-
-#bannerFinal button {
-    font-family: inherit;
-    background-color: #232C50;
-}
-
-footer {
-    box-sizing: border-box;
-    font-size: 12.5px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #1E1E26;
-    padding: 2rem 0%;
-    height: 100vh;
-}
-
-#buscar {
-    font-family: inherit;
-    font-size: 0.8rem;
-    border-radius: 22px;
-    height: 44px;
-    width: 308px;
-    border-style: none;
-    margin: 0px 10px 0px 0px;
-}
-
-
-#formularioBusqueda button {
-    font-size: 0.8rem;
-    border-radius: 20px;
-    width: 63px;
-    height: 42px;
-}
-
-
-#barraNavegacionFooter {
-    display: flex;
-    align-items: flex-start;
-
-}
-
-#barraNavegacionFooter ul {
-    display: flex;
-    flex-wrap: wrap;
-    list-style-type: none;
-    padding: 0%;
-    margin: 0% 3%;
+  .deportistaPrincipal {
+    padding: 1em;
+    margin: 1em;
     font-size: 1rem;
-}
+    line-height: 156.6%;
+    width: 25vw;
+  }
 
-#barraNavegacionFooter li {
-    box-sizing: border-box;
-    width: 100%;
-    font-size: 1rem;
-    padding: 12px 23% 0px;
-}
-
-#redes {
-    width: 100vw;
+  #bannerFinal {
+    background-color: #8b48bf;
     display: flex;
-    justify-content: space-around;
-}
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1% 10% 1% 10%;
+    text-align: left;
+    height: 30vh;
+  }
 
-.iconoFooter {
-    height: 20px;
-    width: 20px;
-}
+  #bannerFinal H2 {
+    width: 20rem;
+    text-align: left;
+  }
 
-#logoSitioWeb {
-    display: block;
-    height: 1.4rem;
-}
+  #bannerFinal button {
+    color: #8b48bf;
+    background-color: #ffff;
+  }
 
+  footer {
+    flex-direction: column-reverse;
+    flex-wrap: wrap-reverse;
+    height: 247px;
+    padding: 3rem 1rem;
+  }
 
+  #formularioBusqueda {
+    order: 1;
+  }
 
+  #buscar {
+    width: 20vw;
+  }
 
+  #logoSitioWeb {
+    order: 4;
+  }
 
+  #redes {
+    width: 30%;
+    order: 3;
+  }
 
-@media(min-width:481px) {
+  #barraNavegacionFooter {
+    order: 2;
+    width: 30%;
+    height: 100%;
+  }
 
-    /* Salome */
+  #barraNavegacionFooter li {
+    padding: 10px 0px;
+  }
 
-    /* Header */
-
-    header {
-        padding: 50px 165px;
-    }
-
-    .logo {
-        margin-top: 25px;
-        margin-left: -20px;
-    }
-
-    #menu-navegacion-header {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: row;
-        padding: 15px;
-        visibility: visible;
-    }
-
-
-    /* Se convierte los enlaces a elementos de linea con la propiedad inline-block */
-    nav ul li {
-        display: inline-block;
-        text-align: center;
-        margin: 0px 18px;
-    }
-
-    /* Se eliminan las lineas inferiores de los enlaces */
-    nav a {
-        text-decoration: none;
-        color: black;
-
-    }
-
-    /* Creacion de cambio de color al acercar el cursor por el menu de navegacion */
-    nav ul li a:hover {
-        color: rgba(36, 46, 82, 0.60);
-    }
-
-    #iconoHamburguesaMenu {
-        display: none;
-    }
-
-    /* Estilos boton contacto */
-    .btn-contact {
-        display: flex;
-        width: 134px;
-        height: 44px;
-        padding: 10px;
-        justify-content: center;
-        align-items: center;
-        border-radius: 50px;
-        background: #8b48bf;
-        color: white;
-        box-shadow: 0px 4px 7px 0px rgba(0, 0, 0, 0.25);
-        border: 1px solid rgb(139, 72, 191);
-        margin-top: 20px;
-    }
-
-    /* - SECCION TENISTA - */
-    .contenedor-tenista {
-        display: flex;
-        flex-direction: row;
-        width: 75%;
-        height: auto;
-        margin: 0 auto;
-    }
-
-    .contenedor-img-tenista {
-        width: 50%;
-        position: relative;
-        bottom: -10px;
-    }
-
-    .img-tenista {
-        height: 90%;
-    }
-
-    .encabezado {
-
-        margin-top: 0px;
-        width: 48%;
-        padding: 50px;
-    }
-
-    .encabezado h1 {
-        color: #232C50;
-        text-align: right;
-        font-size: 45px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 114.6%;
-        /* 57.3px */
-        letter-spacing: -1.75px;
-        align-self: stretch;
-        margin-top: -10px;
-    }
-
-    .encabezado p {
-        display: flex;
-        height: 71px;
-        flex-direction: column;
-        justify-content: center;
-        align-self: stretch;
-        color: #000;
-        text-align: right;
-        font-size: 15px;
-        font-style: normal;
-        font-weight: 500;
-        line-height: 157.1%;
-        /* 26.013px */
-        margin-top: -20px;
-    }
-
-    /* Banner morado */
-
-    .contenedor-banner1 {
-
-        background-color: #8B48BF;
-        width: 100vw;
-        height: 100px;
-        padding: 40px 0 40px 0;
-        display: flex;
-        flex-direction: row;
-        color: white;
-    }
-
-    .contenedor-banner1 h2 {
-        color: white;
-        display: flex;
-        font-weight: 700;
-        font-size: 36px;
-        width: 70%;
-        height: 88px;
-        padding-left: 0px;
-        padding-bottom: 20px;
-        margin-top: 20px;
-        align-self: stretch;
-        text-align: left;
-        flex-wrap: wrap;
-    }
-
-    .contenedor-banner1 p {
-        display: flex;
-        font-weight: 500;
-        font-size: 16px;
-        width: 440px;
-        height: 88px;
-        margin-top: -1px;
-        line-height: 24.18px;
-        letter-spacing: 1px;
-        flex-direction: column;
-        justify-content: center;
-        align-self: stretch;
-    }
-
-
-
-
-
-
-
-
-    /* Dylan */
-
-    #panelDeDeportistas {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    .deportista {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        margin: 1em;
-        padding: 1em;
-        visibility: visible;
-        width: 25vw;
-        font-size: 1rem;
-        line-height: 156.6%;
-    }
-
-    .deportistaPrincipal {
-        padding: 1em;
-        margin: 1em;
-        font-size: 1rem;
-        line-height: 156.6%;
-        width: 25vw;
-    }
-
-    #bannerFinal {
-        background-color: #8B48BF;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        padding: 1% 10% 1% 10%;
-        text-align: left;
-        height: 30vh;
-    }
-
-    #bannerFinal H2 {
-        width: 20rem;
-        text-align: left;
-    }
-
-    #bannerFinal button {
-        color: #8B48BF;
-        background-color: #ffff;
-    }
-
-    footer {
-        flex-direction: column-reverse;
-        flex-wrap: wrap-reverse;
-        height: 247px;
-        padding: 3rem 1rem;
-    }
-
-    #formularioBusqueda {
-        order: 1;
-    }
-
-    #buscar {
-        width: 20vw;
-    }
-
-    #logoSitioWeb {
-        order: 4;
-    }
-
-    #redes {
-        width: 30%;
-        order: 3;
-    }
-
-    #barraNavegacionFooter {
-        order: 2;
-        width: 30%;
-        height: 100%;
-    }
-
-    #barraNavegacionFooter li {
-        padding: 10px 0px;
-    }
-
-    .Copiright {
-        order: 0;
-    }
+  .Copiright {
+    order: 0;
+  }
 }
